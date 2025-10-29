@@ -17,7 +17,7 @@ A simple **React** app that fetches and displays NASA’s **Astronomy Picture of
 
 ## Screenshot
 
-![Screenshot](image.png)  
+![Screenshot](/public/image.png)  
 
 
 ---
@@ -89,7 +89,7 @@ This app uses NASA’s **APOD API**, which requires a free API key.
 
 ### Live Demo
 
-[https://your-live-demo-link.vercel.app](https://your-live-demo-link.vercel.app)
+[https://your-live-demo-link.vercel.app](https://nasa-api-apod-c3pq.vercel.app/)
 *Replace with your actual Vercel deployment link.*
 
 
