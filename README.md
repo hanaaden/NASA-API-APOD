@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+````markdown
+# NASA APOD Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **React** app that fetches and displays NASA’s **Astronomy Picture of the Day (APOD)** using NASA’s public API. The app shows the daily space image, its title, date, and description, giving users a quick view of fascinating astronomy content directly from NASA.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Fetches the **Astronomy Picture of the Day** from NASA’s public API.  
+- Displays the **image**, **title**, **date**, and **description**.  
+- Styled with **Tailwind CSS** for a clean and responsive UI.  
+- Fully functional with **React hooks** (`useState`, `useEffect`).  
+- Easy to expand to include more NASA APIs in the future.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Screenshot
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Screenshot](image.png)  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+
+### Prerequisites
+- Node.js installed  
+- npm (comes with Node.js)  
+
+### Installation
+1. Clone the repository:  
+```bash
+git clone https://github.com/your-username/nasa-apod.git
+````
+
+2. Navigate to the project folder:
+
+```bash
+cd nasa-apod
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open your browser at `http://localhost:5173` (Vite default) to see the app.
+
+---
+
+## API Key
+
+This app uses NASA’s **APOD API**, which requires a free API key.
+
+* You can generate your key here: [https://api.nasa.gov](https://api.nasa.gov)
+* Replace the API key in `NASA.jsx` with your own key.
+
+---
+
+## Technologies Used
+
+* React
+* Axios
+* Tailwind CSS
+* NASA Public API
+
+---
+
+## Future Improvements
+
+* Add **loading indicator** while fetching data.
+* Include additional NASA APIs like Mars Rover Photos or NeoWs.
+
+---
+
+## Author
+
+**Hana Aden / GitHub:** [hanaaden](https://github.com/hanaaden/)
+
+---
+
+### Live Demo
+
+[https://your-live-demo-link.vercel.app](https://your-live-demo-link.vercel.app)
+*Replace with your actual Vercel deployment link.*
+
+```
+
+---
 ```
