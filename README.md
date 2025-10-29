@@ -90,6 +90,6 @@ This app uses NASA’s **APOD API**, which requires a free API key.
 ### Live Demo
 
 [https://your-live-demo-link.vercel.app](https://nasa-api-apod-c3pq.vercel.app/)
-*Replace with your actual Vercel deployment link.*
+
 
 
