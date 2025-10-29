@@ -1,4 +1,4 @@
-````markdown
+
 # NASA APOD Viewer
 
 A simple **React** app that fetches and displays NASA’s **Astronomy Picture of the Day (APOD)** using NASA’s public API. The app shows the daily space image, its title, date, and description, giving users a quick view of fascinating astronomy content directly from NASA.
@@ -92,7 +92,4 @@ This app uses NASA’s **APOD API**, which requires a free API key.
 [https://your-live-demo-link.vercel.app](https://your-live-demo-link.vercel.app)
 *Replace with your actual Vercel deployment link.*
 
-```
 
----
-```
